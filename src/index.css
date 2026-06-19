@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-corp-bg: #FFFFFF;
+  --color-corp-bg-sec: #F8F8F8;
+  --color-corp-border: #E5E5E5;
+  --color-corp-text: #111111;
+  --color-corp-text-sec: #555555;
+  --color-corp-text-muted: #777777;
+  --color-corp-accent: #2C2C2C;
+
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-corp-bg);
+  color: var(--color-corp-text);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6, .brand-font {
+  font-family: var(--font-serif);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Scrollbar styling for a cleaner look */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-corp-border);
+  border-radius: 4px;
+}
