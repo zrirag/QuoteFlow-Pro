@@ -41,3 +41,4 @@ export const PrivateRoute: React.FC<PrivateRouteProps> = ({ children, requiredRo
 
   return <>{children}</>;
 };
+//
